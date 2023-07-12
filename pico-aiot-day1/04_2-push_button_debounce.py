@@ -13,7 +13,7 @@ while True:
 
     currentTime = utime.mktime(utime.localtime())
 
-    if input == 1 and previousStatus == 0 and (currentTime - previousTime) > WAIT_TIME:
+    if input == 0 and previousStatus == 1 and (currentTime - previousTime) > WAIT_TIME:
         previousTime = currentTime
         print("Button pressed @", utime.mktime(utime.localtime()))
 
